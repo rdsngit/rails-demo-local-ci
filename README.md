@@ -1,24 +1,5 @@
-# README
+# Rails 8.1 demo app with CI that can be run locally
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a demo app to show the Rails version 8.1 feature to configure and run the CI workflow locally.
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Rails blog post about v8.1 release: https://rubyonrails.org/2025/10/22/rails-8-1
