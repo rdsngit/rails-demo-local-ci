@@ -62,3 +62,7 @@ env RAILS_ENV=test bin/rails db:seed:replant
 
 ✅ Continuous Integration passed in 2.90s
 ```
+
+## Screenshots
+
+![screenshot of terminal output of local CI run](screenshots/screenshot-of-terminal-output-local-ci.png)
