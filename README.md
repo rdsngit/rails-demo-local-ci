@@ -43,28 +43,34 @@ The Gemfile's dependencies are satisfied
 
 == Removing old logs and tempfiles ==
 
-✅ Setup passed in 1.39s
+✅ Setup passed in 1.45s
 
 
 Tests: Rails
 bin/rspec
 
-No examples found.
 
-Finished in 0.00016 seconds (files took 0.05077 seconds to load)
-0 examples, 0 failures
+Item
+  validations
+    is expected to validate that :name cannot be empty/falsy
+    is expected to validate that :description cannot be empty/falsy
+    is expected to validate that :price cannot be empty/falsy
+    is expected to validate that :price looks like a number
+
+Finished in 0.00676 seconds (files took 0.80785 seconds to load)
+4 examples, 0 failures
 
 
-✅ Tests: Rails passed in 0.16s
+✅ Tests: Rails passed in 0.92s
 
 
 Tests: Seeds
 env RAILS_ENV=test bin/rails db:seed:replant
 
 
-✅ Tests: Seeds passed in 0.54s
+✅ Tests: Seeds passed in 0.58s
 
-✅ Continuous Integration passed in 2.09s
+✅ Continuous Integration passed in 2.95s
 ```
 
 ## Screenshots
