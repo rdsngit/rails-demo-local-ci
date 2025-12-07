@@ -7,3 +7,15 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+Item.find_or_create_by!(
+  name: 'Action Movie',
+  description: 'Description of action movie.',
+  price: 9.99
+)
+
+Item.find_or_create_by!(
+  name: 'Comedy Movie',
+  description: 'Description of comedy movie.',
+  price: 8.99
+)
