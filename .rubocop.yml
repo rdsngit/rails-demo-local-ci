@@ -9,4 +9,23 @@
 #
 # See https://docs.rubocop.org/rubocop/configuration
 
-plugins: rubocop-rails
+plugins:
+  - rubocop-rails
+  - rubocop-rspec
+
+AllCops:
+  NewCops: disable
+  SuggestExtensions: false
+
+Style/BlockComments:
+  Exclude:
+    - spec/spec_helper.rb
+
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/StringLiterals:
+  Enabled: false
