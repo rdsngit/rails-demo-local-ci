@@ -43,7 +43,18 @@ The Gemfile's dependencies are satisfied
 
 == Removing old logs and tempfiles ==
 
-✅ Setup passed in 1.45s
+✅ Setup passed in 1.52s
+
+
+Style: Ruby
+bin/rubocop
+
+Inspecting 25 files
+.........................
+
+25 files inspected, no offenses detected
+
+✅ Style: Ruby passed in 1.00s
 
 
 Tests: Rails
@@ -57,20 +68,20 @@ Item
     is expected to validate that :price cannot be empty/falsy
     is expected to validate that :price looks like a number
 
-Finished in 0.00676 seconds (files took 0.80785 seconds to load)
+Finished in 0.00645 seconds (files took 0.8149 seconds to load)
 4 examples, 0 failures
 
 
-✅ Tests: Rails passed in 0.92s
+✅ Tests: Rails passed in 0.93s
 
 
 Tests: Seeds
 env RAILS_ENV=test bin/rails db:seed:replant
 
 
-✅ Tests: Seeds passed in 0.58s
+✅ Tests: Seeds passed in 0.61s
 
-✅ Continuous Integration passed in 2.95s
+✅ Continuous Integration passed in 4.06s
 ```
 
 ## Screenshots
