@@ -17,6 +17,13 @@ The file containing configuration for the CI can be found at:
 
 - [`config/ci.rb`](/config/ci.rb)
 
+It includes CI steps for:
+
+- setting up the Rails app, such as installing libraries, and preparing the database
+- running the Ruby linter using the [rubocop-rails](https://github.com/rubocop/rubocop-rails) gem
+- running the Ruby on Rails tests using the [rspec-rails](https://github.com/rspec/rspec-rails) gem
+- reseeding the database for the test environment
+
 ## Run the CI locally
 
 Using your terminal run the command:
