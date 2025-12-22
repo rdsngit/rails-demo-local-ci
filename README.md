@@ -99,6 +99,10 @@ env RAILS_ENV=test bin/rails db:seed:replant
 
 ![screenshot of pr status before gh signoff](screenshots/screenshot-pr-status-before-gh-signoff.png)
 
+### Local CI showing gh signoff
+
+![screenshot of local ci output of gh signoff](screenshots/screenshot-local-ci-gh-signoff.png)
+
 ### PR after gh signoff
 
 ![screenshot of pr status after gh signoff is successful](screenshots/screenshot-pr-gh-signoff-success.png)
