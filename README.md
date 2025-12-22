@@ -91,6 +91,26 @@ env RAILS_ENV=test bin/rails db:seed:replant
 ✅ Continuous Integration passed in 4.06s
 ```
 
+## Local CI with gh signoff
+
+The local CI can be configured to be used with the GitHub CLI extension [`gh-signoff`](https://github.com/basecamp/gh-signoff).
+
+Once `gh signoff` is installed on your computer you can enable the following lines in the [config/ci.rb](/config/ci.rb) file:
+
+```rb
+  # Optional: set a green GitHub commit status to unblock PR merge.
+  # Requires the `gh` CLI and `gh extension install basecamp/gh-signoff`.
+  if success?
+    step "Signoff: All systems go. Ready for merge and deploy.", "gh signoff"
+  else
+    failure "Signoff: CI failed. Do not merge or deploy.", "Fix the issues and try again."
+  end
+```
+
+When a PR is opened for a development branch and `bin/ci` is run it will carry out all the CI steps and if they all pass the PR status will be set to be ready to merge - see screenshots below.
+
+There is an example of this in this demo PR: https://github.com/rdsngit/rails-demo-local-ci/pull/2
+
 ## Screenshots
 
 ![screenshot of terminal output of local CI run](screenshots/screenshot-of-terminal-output-local-ci.png)
