@@ -94,3 +94,7 @@ env RAILS_ENV=test bin/rails db:seed:replant
 ## Screenshots
 
 ![screenshot of terminal output of local CI run](screenshots/screenshot-of-terminal-output-local-ci.png)
+
+### PR before gh signoff
+
+![screenshot of pr status before gh signoff](screenshots/screenshot-pr-status-before-gh-signoff.png)
